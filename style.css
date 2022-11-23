@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  color: #3f007d;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 28px;
+
+  height: 740px;
+  width: 360px;
+
+  border: 2px solid #3f007d;
+  border-radius: 58px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+
+  top: 5px;
+  left: 5px;
+
+  height: 722px;
+  width: 342px;
+
+  border: 2px solid #3f007d;
+  border-radius: 52px;
+}
+
+.btn {
+  padding: 10px 20px;
+
+  width: 270px;
+
+  font-family: inherit;
+  font-size: 18px;
+
+  color: #fff;
+  background-color: #580ea2;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3f007d;
+}
+
+.btn:active {
+  background-color: #271a58;
+}
+
+.visibility {
+  opacity: 0;
+}
+
+/*************login-form******************/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 270px;
+
+  font-size: 18px;
+  color: #3f007d;
+  font-weight: 600;
+}
+
+.login-input {
+  padding: 10px 20px;
+
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+
+  color: inherit;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid #580ea2;
+  box-shadow: 0px 0px 0px 1px #580ea2;
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px #bc9fda;
+}
+
+.error-text {
+  text-align: center;
+}
+
+/****************lobby****************/
+
+.lobby-content {
+  height: 55vh;
+}
+
+.players-list {
+  height: 25vh;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.player-nickname {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*************waiting-list***********/
+
+.waiting-list {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/**********************************/
+
+.move-buttons,
+.result-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gamepage-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gamepage-text {
+  margin: 64px 0;
+  font-size: 22px;
+  font-weight: 600;
+}

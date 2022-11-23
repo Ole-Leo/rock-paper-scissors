@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, paper, scissors</title>
+  </head>
+  <body>
+    <div class="app"></div>
+
+    <script>
+      const baseURL = 'https://skypro-rock-scissors-paper.herokuapp.com';
+      const app = document.querySelector('.app');
+      window.application = {
+        blocks: {},
+        screens: {},
+        renderScreen: function (screenName, text = '') {
+          window.application.screens[screenName](text);
+        },
+        renderBlock: function (blockName, container, text = '') {
+          window.application.blocks[blockName](container, text);
+        },
+        timers: [],
+      };
+
+      const GAME = window.application;
+    </script>
+    <script src="/scripts/utils.js"></script>
+    <script src="/scripts/login-screen.js"></script>
+    <script src="/scripts/lobby-screen.js"></script>
+    <script src="/scripts/waiting-game-screen.js"></script>
+    <script src="/scripts/game-move-screen.js"></script>
+    <script src="/scripts/waiting-move-screen.js"></script>
+    <script src="/scripts/result-screen.js"></script>
+  </body>
+</html>
