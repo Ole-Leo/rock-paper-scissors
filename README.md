@@ -1,6 +1,6 @@
 # Игра «Камень, ножницы, бумага»
 
-[Demo]()
+[Demo](https://ole-leo.github.io/rock-paper-scissors/)
 
 ---
 
@@ -29,7 +29,7 @@ Javascript, HTML, CSS
 
 ---
 
-Для запуска проекта необходимо клонировать репозиторий
+Для запуска игры на локальном копьютере необходимо клонировать репозиторий
 
 ```
 https://github.com/Ole-Leo/rock-paper-scissors.git
